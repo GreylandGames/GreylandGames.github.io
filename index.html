@@ -4,18 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Greyland Games</title>
-    <style>
-body {
-  background-image: linear-gradient(rgba(0,0,0,0.0),rgba(0,0,0,0.5)), url('logo.png');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: contain;
-background-position: center;
-}
-</style>
+    <title>Document</title>
 </head>
 <body>
+    <div class="center">Greyland Games</div>
+    <div class="bg"></div>
     
 </body>
+<style>
+    .center
+    {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: xx-large;
+        font-family: 'Courier New', Courier, monospace;
+        color: white;
+    }
+    .bg{
+        display: flex;   
+        background-image: url("./logo.png");
+        background-repeat: repeat;
+        background-position: center;
+        background-size: 120px;
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        z-index: -1;
+        width: 400%;
+        height: 400%;
+        transform: rotate(45deg);
+        filter: brightness(0.8);
+        background-color: #000000;
+    }
+
+    body{
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+    }
+</style>
 </html>
